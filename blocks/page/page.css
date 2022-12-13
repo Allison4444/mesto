@@ -1,3 +1,7 @@
 .page {
   background-color: black;
+  max-width: calc(1280px - 200px*2);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
