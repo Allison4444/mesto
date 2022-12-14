@@ -1,0 +1,10 @@
+.profile-info-row {
+  display: flex;
+  margin-bottom: 9px;
+}
+
+@media screen and (max-width: 540px) {
+  .profile-info-row {
+    margin-bottom: 7px;
+  }
+}

@@ -8,4 +8,30 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 190px;
+  width: 100%;
 }
+
+@media screen and (max-width: 900px) {
+  .mask-group__title {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .mask-group__title {
+    max-width: 190px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .mask-group__title {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .mask-group__title {
+    max-width: 210px;
+  }
+}
+

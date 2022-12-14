@@ -14,3 +14,10 @@
 .add-button__position:hover {
   opacity: 0.6;
 }
+
+@media screen and (max-width: 540px) {
+  .add-button__position {
+    width: 100%;
+    background-size: 16px 16px;
+  }
+}
