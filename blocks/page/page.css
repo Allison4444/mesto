@@ -5,3 +5,21 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (max-width: 900px) {
+  .page {
+    max-width: calc(880px - 100px*2);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .page {
+    max-width: max-content;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .page {
+    max-width: 100%;
+  }
+}
