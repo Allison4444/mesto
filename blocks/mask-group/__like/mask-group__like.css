@@ -1,0 +1,15 @@
+.mask-group__like {
+  width: 22px;
+  height: 19px;
+  align-self: center;
+  background-color: #fff;
+  border: none;
+  background-image: url('../../../images/like.svg');
+  transition: opacity 0.2s linear;
+  display: block;
+  margin-right: 5px;
+}
+
+.mask-group__like:hover {
+  opacity: 0.5;
+}
