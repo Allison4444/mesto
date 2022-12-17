@@ -1,22 +1,17 @@
-.mask-group__like {
+.mask-group__like_active {
   width: 22px;
   height: 19px;
   align-self: center;
   background-color: #fff;
   border: none;
-  background-image: url('../../../images/like.svg');
+  background-image: url('../../../../images/active-like\ .svg');
   transition: opacity 0.2s linear;
   display: block;
   margin-right: 5px;
 }
 
-.mask-group__like:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
 @media screen and (max-width: 540px) {
-  .mask-group__like {
+  .mask-group__like_active {
     margin-right: 1px;
   }
 }

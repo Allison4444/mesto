@@ -32,6 +32,7 @@
 @import url(../blocks/mask-group/mask-group.css);
 @import url(../blocks/mask-group/__title/mask-group__title.css);
 @import url(../blocks/mask-group/__like/mask-group__like.css);
+@import url(../blocks/mask-group/__like/_active/mask-group__like_active.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__project-name/footer__project-name.css);
@@ -40,3 +41,11 @@
 @import url(../blocks/profile-info-row/__edit-button/profile-info-row__edit-button.css);
 @import url(../blocks/profile-info-row/__name/profile-info-row__name.css);
 
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__container/_element/popup__container_element_title.css);
+@import url(../blocks/popup/__container/_element/popup__container_element_name.css);
+@import url(../blocks/popup/__container/_element/popup__container_element_bio.css);
+@import url(../blocks/popup/__container/_element/popup__container_element_button.css);
+@import url(../blocks/popup/__container/_element/popup__container_element_close-button.css);

@@ -13,6 +13,7 @@
 
 .add-button__position:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 540px) {
