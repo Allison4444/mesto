@@ -1,17 +1,59 @@
 # Проект: Место
-
+---
 ### Обзор
 
-* Figma
-* Картинки
+* Описание проекта и его функциональности
+* Используемые технологии
+* Ссылка на GitHub Pages
 
-**Figma**
+**Описание проекта и его функциональности**
 
-* [Ссылка на макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
+Сервис Mesto: интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки.
 
-**Картинки**
+**Используемые технологии**
 
-Доставать картинки предстоит из Фигмы. Это расхожая практика, поэтому полезно потренироваться.
-Не забудьте [оптимизировать картинки](https://tinypng.com/), чтобы ваш сайт загружался быстрее.
+* Для написания сайта использовалась технология HTML. Например:
 
-Удачи!
+```html
+<article class="element" aria-label="Карточка">
+  <img src="./images/karachayevsk.jpg" alt="Вид на Сентинский храм" class="element__photo">
+  <div class="mask-group element__mask-group">
+    <p class="mask-group__title">Карачаевск</p>
+    <button class="mask-group__like"></button>
+  </div>
+</article>
+```
+
+* Для придания сайту привлекательного и уникального внешнего вида использовалась технология CSS. Пример:
+
+```css
+.element {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 540px) {
+  .element {
+    max-height: 361px;
+    height: 361px;
+    margin-bottom: 20px;
+  }
+
+  .element:last-child {
+    margin-bottom: 0;
+  }
+}
+```
+* С помощью языка программирования Java Script сайт стал интерактивным. Пример:
+
+```javascript
+function handleFormSubmit(evt) {
+  evt.preventDefault();
+  nameProfile.textContent = nameInput.value;
+  jobProfile.textContent = jobInput.value;
+  popupElement.classList.remove('popup_opened');
+}
+```
+
+**Ссылка на GitHub Pages**
+
