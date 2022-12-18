@@ -4,6 +4,7 @@
   border: 1px solid #fff;
   background-image: url('../../../images/edit.svg');
   background-repeat: no-repeat;
+  box-sizing: border-box;
   background-size: 10px 10px;
   background-position: center;
   background-color: black;

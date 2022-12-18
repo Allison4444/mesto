@@ -5,6 +5,8 @@
   background-color: #fff;
   border: none;
   background-image: url('../../../images/like.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
   transition: opacity 0.2s linear;
   display: block;
   margin-right: 5px;
