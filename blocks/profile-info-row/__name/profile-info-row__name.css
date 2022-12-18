@@ -6,6 +6,10 @@
   margin-top: 0;
   margin-bottom: 0px;
   margin-right: 19px;
+  max-width: 295px;
+  width: 100%;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
 }
 
 @media screen and (max-width:680px) {
@@ -22,5 +26,7 @@
     margin-top: 26px;
     margin-right: 10px;
     margin-left: 27px;
+    max-width: 190px;
+    text-align: center;
   }
 }
