@@ -1,13 +1,7 @@
-.popup__container_element_button {
+.popup__save-button {
   max-width: calc(100% - 2*36px);
-  max-height: 50px;
-  box-shadow: none;
-  position: static;
-  display: flex;
-  margin-top: 48px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
+  width: 100%;
+  margin: 48px auto 37px;
   font-family: 'Inter', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -19,20 +13,24 @@
   align-items: center;
   border-radius: 2px;
   transition: opacity 0.2s linear;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
-.popup__container_element_button:hover {
+.popup__save-button:hover {
   cursor: pointer;
   opacity: 0.8;
 }
 
 @media screen and (max-width: 540px) {
-  .popup__container_element_button {
-    max-width: calc(100% - 2*22px);
+  .popup__save-button {
     margin-top: 45px;
-    max-height: 46px;
+    margin-bottom: 25px;
+    max-width: calc(100% - 2*22px);
     font-size: 14px;
     line-height: 17px;
+    padding-bottom: 15px;
   }
 }
-

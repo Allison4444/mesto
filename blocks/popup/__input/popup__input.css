@@ -1,29 +1,28 @@
-.popup__container_element_bio {
+.popup__input {
   max-width: calc(100% - 2*36px);
-  max-height: 37px;
+  width: 100%;
   border-radius: 0;
-  box-shadow: none;
-  position: static;
-  display: block;
-  margin-top: 20px;
+  margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
-  box-sizing: border-box;
+  display: block;
   border: 0;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
   font-family: 'Inter', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  box-sizing: border-box;
+  padding-bottom: 9px;
+  padding-top: 6px;
 }
 
-.popup__container_element_bio:focus {
-  outline-color: #7b88c8;
-  border: 3px solid #7b88c8;
+.popup__input:last-of-type{
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 540px) {
-  .popup__container_element_bio {
+  .popup__input {
     max-width: calc(100% - 2*22px);
   }
 }

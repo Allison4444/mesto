@@ -16,3 +16,9 @@
     max-width: calc(100% - 2*20px);
   }
 }
+
+@media screen and (max-width: 540px) {
+  .mask-group {
+    padding-bottom: 25px;
+  }
+}
