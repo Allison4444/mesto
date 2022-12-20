@@ -15,11 +15,11 @@
 * Для написания сайта использовалась технология HTML. Например:
 
 ```html
-<article class="element" aria-label="Карточка">
+<article class="element">
   <img src="./images/karachayevsk.jpg" alt="Вид на Сентинский храм" class="element__photo">
-  <div class="mask-group element__mask-group">
-    <p class="mask-group__title">Карачаевск</p>
-    <button class="mask-group__like"></button>
+  <div class="element__caption">
+    <h2 class="element__caption-title">Карачаевск</h2>
+    <button type="button" class="element__caption-like" aria-label="Кнопка лайка"></button>
   </div>
 </article>
 ```
@@ -27,20 +27,30 @@
 * Для придания сайту привлекательного и уникального внешнего вида использовалась технология CSS. Пример:
 
 ```css
-.element {
-  border-radius: 10px;
-  background-color: #fff;
+.element__caption {
+  display: flex;
+  max-width: 246px;
+  width: 100%;
+  justify-content: space-between;
+  margin: 21px 15px 25px 21px;
+}
+
+@media screen and (max-width: 900px) {
+  .element__caption {
+    max-width: 295px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .element__caption {
+    max-width: calc(100% - 2*20px);
+  }
 }
 
 @media screen and (max-width: 540px) {
-  .element {
-    max-height: 361px;
-    height: 361px;
+  .element__caption {
+    padding-bottom: 25px;
     margin-bottom: 20px;
-  }
-
-  .element:last-child {
-    margin-bottom: 0;
   }
 }
 ```
@@ -51,8 +61,10 @@ function handleFormSubmit(evt) {
   evt.preventDefault();
   nameProfile.textContent = nameInput.value;
   jobProfile.textContent = jobInput.value;
-  popupElement.classList.remove('popup_opened');
+  closePopup();
 }
+
+formElelement.addEventListener('submit', handleFormSubmit);
 ```
 
 **Ссылка на GitHub Pages**
