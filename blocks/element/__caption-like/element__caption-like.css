@@ -1,4 +1,4 @@
-.mask-group__like {
+.element__caption-like {
   width: 22px;
   height: 19px;
   align-self: center;
@@ -12,13 +12,13 @@
   margin-right: 5px;
 }
 
-.mask-group__like:hover {
+.element__caption-like:hover {
   opacity: 0.5;
   cursor: pointer;
 }
 
 @media screen and (max-width: 540px) {
-  .mask-group__like {
+  .element__caption-like {
     margin-right: 1px;
   }
 }

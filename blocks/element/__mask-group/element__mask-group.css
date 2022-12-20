@@ -1,9 +1,0 @@
-.element__mask-group {
-  margin: 21px 15px 25px 21px;
-}
-
-@media screen and (max-width: 540px) {
-  .element__mask-group {
-    margin-bottom: 20px;
-  }
-}

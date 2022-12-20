@@ -11,78 +11,79 @@
 <body class="page">
   <header class="header page__header">
     <img src="./images/header-logo.svg" alt="Надпись Mesto" class="header__logo">
-    <div class="header__line"></div>
   </header>
   <main class="content">
     <section class="profile content__profile">
       <img src="./images/avatar.jpg" alt="Аватар пользователя" class="profile__avatar">
-      <div class="profile-info">
-        <div class="profile-info-row">
-          <h1 class="profile-info-row__name">Жак-Ив Кусто</h1>
-          <button class="profile-info-row__edit-button"></button>
+      <div class="profile__info">
+        <div class="profile__info-row">
+          <h1 class="profile__info-row-name">Жак-Ив Кусто</h1>
+          <button type="button" class="profile__info-row-edit-button"
+            aria-label="Кнопка редактирования профиля"></button>
         </div>
-        <p class="profile-info__job">Исследователь океана</p>
+        <p class="profile__info-job">Исследователь океана</p>
       </div>
-      <div class="add-button">
-        <button class="add-button__position"></button>
-      </div>
+      <button type="button" class="profile__add-button" aria-label="Кнопка добавления карточек"></button>
     </section>
-    <div class="elements content__elements">
-      <article class="element" aria-label="Карточка">
+    <section class="elements content__elements" aria-label="Карточки достопримечательностей">
+      <article class="element">
         <img src="./images/karachayevsk.jpg" alt="Вид на Сентинский храм" class="element__photo">
-        <div class="mask-group element__mask-group">
-          <p class="mask-group__title">Карачаевск</p>
-          <button class="mask-group__like"></button>
+        <div class="element__caption">
+          <h2 class="element__caption-title">Карачаевск</h2>
+          <button type="button" class="element__caption-like" aria-label="Кнопка лайка"></button>
         </div>
       </article>
-      <article class="element" aria-label="Карточка">
+      <article class="element">
         <img src="./images/gora-elbrus.jpg" alt="Вид на гору Эльбрус" class="element__photo">
-        <div class="mask-group element__mask-group">
-          <p class="mask-group__title">Гора Эльбрус</p>
-          <button class="mask-group__like"></button>
+        <div class="element__caption">
+          <h2 class="element__caption-title">Гора Эльбрус</h2>
+          <button type="button" class="element__caption-like" aria-label="Кнопка лайка"></button>
         </div>
       </article>
-      <article class="element" aria-label="Карточка">
+      <article class="element">
         <img src="./images/dombaj.jpg" alt="Вид Белалакую гору" class="element__photo">
-        <div class="mask-group element__mask-group">
-          <p class="mask-group__title">Домбай</p>
-          <button class="mask-group__like"></button>
+        <div class="element__caption">
+          <h2 class="element__caption-title">Домбай</h2>
+          <button type="button" class="element__caption-like" aria-label="Кнопка лайка"></button>
         </div>
       </article>
-      <article class="element" aria-label="Карточка">
+      <article class="element">
         <img src="./images/gora-elbrus.jpg" alt="Вид на гору Эльбрус" class="element__photo">
-        <div class="mask-group element__mask-group">
-          <p class="mask-group__title">Гора Эльбрус</p>
-          <button class="mask-group__like"></button>
+        <div class="element__caption">
+          <h2 class="element__caption-title">Гора Эльбрус</h2>
+          <button type="button" class="element__caption-like" aria-label="Кнопка лайка"></button>
         </div>
       </article>
-      <article class="element" aria-label="Карточка">
+      <article class="element">
         <img src="./images/dombaj.jpg" alt="Вид Белалакую гору" class="element__photo">
-        <div class="mask-group element__mask-group">
-          <p class="mask-group__title">Домбай</p>
-          <button class="mask-group__like"></button>
+        <div class="element__caption">
+          <h2 class="element__caption-title">Домбай</h2>
+          <button type="button" class="element__caption-like" aria-label="Кнопка лайка"></button>
         </div>
       </article>
-      <article class="element" aria-label="Карточка">
+      <article class="element">
         <img src="./images/karachayevsk.jpg" alt="Вид на Сентинский храм" class="element__photo">
-        <div class="mask-group element__mask-group">
-          <p class="mask-group__title">Карачаево-Черкесская республика</p>
-          <button class="mask-group__like"></button>
+        <div class="element__caption">
+          <h2 class="element__caption-title">Карачаево-Черкесская республика</h2>
+          <button type="button" class="element__caption-like" aria-label="Кнопка лайка"></button>
         </div>
       </article>
-    </div>
+    </section>
   </main>
   <footer class="footer page__footer">
     <p class="footer__project-name">&copy; 2020 Mesto Russia</p>
   </footer>
   <div class="popup">
-    <form class="popup__container">
-      <h2 class="popup__header">Редактировать профиль</h2>
-      <input type="text" class="popup__input popup__input_element_name">
-      <input type="text" class="popup__input popup__input_element_job">
-      <button type="submit" class="popup__save-button">Сохранить</button>
-      <button type="button" class="popup__close-button"></button>
-    </form>
+    <div class="popup__container">
+      <form name="profile-editing-form" class="popup__form">
+        <h2 class="popup__header">Редактировать профиль</h2>
+        <input type="text" name="name" placeholder="Ваше имя" required class="popup__input popup__input_element_name">
+        <input type="text" name="job" placeholder="Ваш род деятельности" required
+          class="popup__input popup__input_element_job">
+        <button type="submit" class="popup__save-button">Сохранить</button>
+        <button type="button" class="popup__close-button" aria-label="Кнопка закрытия"></button>
+      </form>
+    </div>
   </div>
   <script src="./scripts/index.js"></script>
 </body>

@@ -1,24 +1,26 @@
-.mask-group {
+.element__caption {
   display: flex;
   max-width: 246px;
   width: 100%;
   justify-content: space-between;
+  margin: 21px 15px 25px 21px;
 }
 
 @media screen and (max-width: 900px) {
-  .mask-group {
+  .element__caption {
     max-width: 295px;
   }
 }
 
 @media screen and (max-width: 680px) {
-  .mask-group {
+  .element__caption {
     max-width: calc(100% - 2*20px);
   }
 }
 
 @media screen and (max-width: 540px) {
-  .mask-group {
+  .element__caption {
     padding-bottom: 25px;
+    margin-bottom: 20px;
   }
 }

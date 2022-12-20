@@ -1,4 +1,4 @@
-.mask-group__title {
+.element__caption-title {
   margin: 0;
   font-family: 'Inter', 'Arial', sans-serif;
   font-weight: 900;
@@ -12,25 +12,25 @@
 }
 
 @media screen and (max-width: 900px) {
-  .mask-group__title {
+  .element__caption-title {
     max-width: 250px;
   }
 }
 
 @media screen and (max-width: 680px) {
-  .mask-group__title {
+  .element__caption-title {
     max-width: 190px;
   }
 }
 
 @media screen and (max-width: 540px) {
-  .mask-group__title {
+  .element__caption-title {
     max-width: 350px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .mask-group__title {
+  .element__caption-title {
     max-width: 210px;
   }
 }
