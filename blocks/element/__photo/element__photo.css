@@ -6,6 +6,10 @@
   object-position: center;
 }
 
+.element__photo:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
   .element__photo {
     width: 100%;
